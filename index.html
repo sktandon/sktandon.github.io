@@ -13,6 +13,35 @@
     h2 {font-family: "Bad Script"}
     h1 {font-family: "Bad Script"; font-size: 50px}
 
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    li a.active {
+        color: white;
+        background-color: #04AA6D;
+    }
 </style>
 <body class="w3-light-grey">
 
@@ -21,6 +50,12 @@
 
     <!-- The Grid -->
     <div class="w3-row-padding">
+        <div class="w3-container" style="padding-bottom: 5px">
+            <ul>
+                <li><a class="active" href='index.html'>Home</a></li>
+                <li><a href="projects.html">Projects & Research</a></li>
+            </ul>
+        </div>
 
         <!-- Left Column -->
         <div class="w3-third">
